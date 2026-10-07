@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;  /*para que margin y padding no le sumen al tamaño del elemento*/
+    font-family: "spartan",sans-serif;
+}
+
+body{
+    height: 300vh;
+}
+
+/*header y navegación con barra fija de menu*/
+
+.header{
+   padding: 50px;
+   background-color: beige;
+   z-index: 999;
+   position: sticky;
+   top:0;
+   left:0;
+
+}
+
+
+.nav {
+    display: flex;
+    /*este flexbox solo se aplica al hijo directo o sea al ul pero no a los li*/    
+    align-items: center;
+    color: #000;
+    justify-content: space-between;
+    
+}
+
+.nav > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 5px;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+  
+}
+
+.navbar {
+    display: flex; /*necesito otro flexbox que se aplique a los li desde ul */
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0 20px;
+    
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+.hero {
+    height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+        url("./img/hero.jpg");
+
+    background-size: cover; /* cubre todo el hero */
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 900px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+.hero-buttons a {
+    padding: 15px 25px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 0, 0.727);
+    color: black;
+    border-radius: 5px;
+    
+}
+
+
