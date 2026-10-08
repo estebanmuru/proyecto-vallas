@@ -235,7 +235,7 @@ body {
 ========================= */
 
 .contacto {
-    text-align: center;
+    text-align:left;
 }
 
 .contacto p {
@@ -265,3 +265,125 @@ body {
 
     text-align: center;
 }
+
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto {
+    padding: 60px 50px;
+}
+
+.contacto .section-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contacto h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+.contacto > .section-content > p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contacto-container {
+    display: flex;
+    gap: 40px;
+}
+
+
+/* FORMULARIO */
+
+.contacto-form {
+    flex: 1;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.contacto-form h2 {
+    margin-bottom: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.contacto-form button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5b400;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* INFORMACIÓN */
+
+.contacto-info {
+    flex: 1;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.contacto-info h2 {
+    margin-bottom: 25px;
+}
+
+.contacto-info p {
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+
+/* WHATSAPP */
+
+.btn-whatsapp {
+    display: block;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #25d366;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .contacto-container {
+        flex-direction: column;
+    }
+
+}
+
