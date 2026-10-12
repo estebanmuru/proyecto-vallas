@@ -44,7 +44,15 @@ body {
     font-weight: 600;
 
 }
+.nav>a:hover{
+    font-size: 1.4rem;
+    color:rgba(201, 134, 10, 0.717);
+}
 
+.nav>i:hover{
+    font-size: 1.4rem;
+    color:rgba(201, 134, 10, 0.717);
+}
 .navbar {
     display: flex;
     /*necesito otro flexbox que se aplique a los li desde ul */
@@ -58,11 +66,16 @@ body {
 
 }
 
-.navbar a {
+.navbar a  {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
     color: black;
+}
+
+.navbar a:hover{
+    font-size: 1.4rem;
+    color:rgba(201, 134, 10, 0.717);
 }
 
 .hero {
